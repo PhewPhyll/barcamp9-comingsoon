@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/BARCAMP.png);
+    background-position: center;
+    background-size: cover;
+} */
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    min-height: 700px;
+    background-image: url(images/BARCAMP.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.content {
+    text-align: start;
+    color: #000;
+}
+
+.content-video {
+    text-align: center;
+    color: #000;
+    background: rgba(106, 182, 180, 0.75);
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.content-video video {
+    width: 100%;
+    /* ให้วิดีโอมีขนาด 100% ของ container */
+    max-width: 600px;
+    /* จำกัดขนาดสูงสุด */
+    height: auto;
+    /* ให้ความสูงปรับตามอัตราส่วนของความกว้าง */
+    border-radius: 10px;
+    /* ใส่ขอบโค้ง (ถ้าต้องการ) */
+}
+
+.content h1 {
+    font-family: 'poppins', sans-serif;
+    font-size: 64px;
+    font-weight: 500;
+}
+
+.content p {
+    font-size: 24px;
+    font-family: 'poppins', sans-serif;
+}
+
+.content p span {
+    font-size: 32px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    color: #6E6295;
+}
+
+.content h1 span {
+    color: #6AB6B4;
+}
+
+.content button {
+    background: transparent;
+    border: 4px solid #6AB6B4;
+    outline: none;
+    padding: 12px 25px;
+    color: #6AB6B4;
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    /* font-weight: bolder; */
+    font-style: normal;
+}
+
+.content button img {
+    width: 15px;
+    margin-left: 10px;
+    color: #6AB6B4;
+}
+
+.launch-time {
+    display: flex;
+}
+
+.fonts-poppins {
+    font-family: 'poppins', sans-serif;
+}
+
+.launch-time div {
+    font-family: 'poppins', sans-serif;
+    flex-basis: 100px;
+    color: #6E6295;
+}
+
+.launch-time div p {
+    font-size: 60px;
+    margin-bottom: -14px;
+}
+
+@media (max-width: 1650px) {}
+
+@media (max-width: 1465px) {
+    .content h1 {
+        font-size: 48px;
+    }
+
+    .content p {
+        font-size: 20px;
+    }
+
+    .content p span {
+        font-size: 28px;
+    }
+
+    .launch-time div p {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
+    }
+
+    .content p {
+        display: flex;
+        gap: 5px;
+        margin-bottom: -14px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .launch-time {
+        justify-content: center;
+    }
+
+    .content button {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        /* max-width: 200px; */
+    }
+
+    .content-video video {
+        width: 100%;
+        /* ให้วิดีโอมีขนาด 100% ของ container */
+        max-width: 500px;
+        /* จำกัดขนาดสูงสุด */
+        height: auto;
+        /* ให้ความสูงปรับตามอัตราส่วนของความกว้าง */
+        border-radius: 10px;
+        /* ใส่ขอบโค้ง (ถ้าต้องการ) */
+    }
+}
+
+@media (max-width: 565px) {
+    .content {
+        gap: 15px;
+    }
+
+    .content h1 {
+        font-size: 32px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+
+    .content p span {
+        font-size: 16px;
+    }
+
+    .launch-time div p {
+        font-size: 16px;
+        margin-bottom: -2px;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .content button {
+        margin-top: 20px;
+    }
+
+}
