@@ -69,6 +69,11 @@
     color: #6AB6B4;
 }
 
+.button {
+    display: flex;
+    justify-content: start;
+}
+
 .content button {
     background: transparent;
     border: 4px solid #6AB6B4;
@@ -83,27 +88,14 @@
     font-family: "Poppins", sans-serif;
     font-style: normal;
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    font-size: 16px;
 }
 
 .content button:hover {
-    background-color:#6AB6B4;
+    background-color: #6AB6B4;
     border: 4px solid #6AB6B4;
-    outline: none;
-    padding: 12px 25px;
     color: #fff;
-    display: flex;
-    align-items: center;
-    margin-top: 40px;
-    cursor: pointer;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
-  }
-
-.content button img {
-    width: 15px;
-    margin-left: 10px;
-    color: #6AB6B4;
 }
 
 .launch-time {
@@ -125,11 +117,47 @@
     margin-bottom: -14px;
 }
 
-@media (min-width: 1650px) {
-    .content{
-        width: auto;
-        max-width: 2500;
+@media (max-width:2560px) {
+    .content h1 {
+        font-size: 72px;
     }
+
+    .content p {
+        font-size: 32px;
+    }
+
+    .content p span {
+        font-size: 48px;
+    }
+
+    .launch-time div p {
+        font-size: 72px;
+    }
+
+    .content-video video {
+        width: 100%;
+        /* ให้วิดีโอมีขนาด 100% ของ container */
+        max-width: 1000px;
+        /* จำกัดขนาดสูงสุด */
+        height: auto;
+        /* ให้ความสูงปรับตามอัตราส่วนของความกว้าง */
+        border-radius: 10px;
+        /* ใส่ขอบโค้ง (ถ้าต้องการ) */
+    }
+
+    .content button {
+        border: 10px solid #6AB6B4;
+        color: #6AB6B4;
+        margin-top: 60px;
+        font-size: 32px;
+    }
+
+    .content button:hover {
+        border: 10px solid #6AB6B4;
+    }
+}
+
+@media (max-width:1920px) {
     .content-video video {
         width: 100%;
         /* ให้วิดีโอมีขนาด 100% ของ container */
@@ -139,6 +167,67 @@
         /* ให้ความสูงปรับตามอัตราส่วนของความกว้าง */
         border-radius: 10px;
         /* ใส่ขอบโค้ง (ถ้าต้องการ) */
+    }
+
+    .content button {
+        border: 8px solid #6AB6B4;
+        color: #6AB6B4;
+        margin-top: 60px;
+        font-size: 28px;
+    }
+    .content button:hover {
+        border: 8px solid #6AB6B4;
+      }
+}
+
+@media (max-width: 1650px) {
+    .content h1 {
+        font-size: 64px;
+    }
+
+    .content p {
+        font-size: 24px;
+    }
+
+    .content p span {
+        font-size: 32px;
+    }
+
+    .launch-time div p {
+        font-size: 64px;
+    }
+
+    .content {
+        width: auto;
+        max-width: 2500;
+    }
+
+    .content-video video {
+        width: 100%;
+        /* ให้วิดีโอมีขนาด 100% ของ container */
+        max-width: 750px;
+        /* จำกัดขนาดสูงสุด */
+        height: auto;
+        /* ให้ความสูงปรับตามอัตราส่วนของความกว้าง */
+        border-radius: 10px;
+        /* ใส่ขอบโค้ง (ถ้าต้องการ) */
+    }
+
+    .content button {
+        border: 6px solid #6AB6B4;
+        color: #6AB6B4;
+        margin-top: 60px;
+        font-size: 24px;
+    }
+    .content button:hover {
+        border: 6px solid #6AB6B4;
+      }
+}
+
+@media (max-width:1550px) {
+    .content-video video {
+        width: 100%;
+        max-width: 700px;
     }
 }
 
@@ -158,6 +247,17 @@
     .launch-time div p {
         font-size: 48px;
     }
+
+    .content-video video {
+        width: 100%;
+        /* ให้วิดีโอมีขนาด 100% ของ container */
+        max-width: 600px;
+        /* จำกัดขนาดสูงสุด */
+        height: auto;
+        /* ให้ความสูงปรับตามอัตราส่วนของความกว้าง */
+        border-radius: 10px;
+        /* ใส่ขอบโค้ง (ถ้าต้องการ) */
+    }
 }
 
 @media (max-width: 1280px) {
@@ -172,7 +272,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-       
+
     }
 
     .content p {
@@ -187,18 +287,30 @@
         justify-content: center;
     }
 
+    .button {
+        display: flex;
+        justify-content: center;
+    }
+
     .content button {
         justify-content: center;
         align-items: center;
-        width: 100%;
-        text-decoration: none; 
-        /* max-width: 200px; */
+        width: 60%;
+        text-decoration: none;
+        border: 4px solid #6AB6B4;
+        color: #6AB6B4;
+        margin-top: 60px;
+        font-size: 24px;
     }
+    .content button:hover {
+        border: 4px solid #6AB6B4;
+      }
+
 
     .content-video video {
         width: 100%;
         /* ให้วิดีโอมีขนาด 100% ของ container */
-        max-width: 500px;
+        max-width: 450px;
         /* จำกัดขนาดสูงสุด */
         height: auto;
         /* ให้ความสูงปรับตามอัตราส่วนของความกว้าง */
@@ -231,8 +343,23 @@
         align-items: center;
     }
 
-    .content button {
-        margin-top: 20px;
+    .content-video video {
+        width: 100%;
+        /* ให้วิดีโอมีขนาด 100% ของ container */
+        max-width: 400px;
+        /* จำกัดขนาดสูงสุด */
+        height: auto;
+        /* ให้ความสูงปรับตามอัตราส่วนของความกว้าง */
+        border-radius: 10px;
+        /* ใส่ขอบโค้ง (ถ้าต้องการ) */
     }
+
+    .content button {
+        width: 50%;
+        height: 50%;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
 
 }
