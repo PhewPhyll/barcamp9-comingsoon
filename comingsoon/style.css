@@ -29,10 +29,9 @@
 .content-video {
     text-align: center;
     color: #000;
-    background: rgba(106, 182, 180, 0.75);
+    background: rgba(110, 98, 149, 0.75);
     padding: 10px;
     border-radius: 10px;
-
 }
 
 .content-video video {
